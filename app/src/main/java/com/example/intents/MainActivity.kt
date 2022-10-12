@@ -129,8 +129,14 @@ class MainActivity : AppCompatActivity() {
                 true
             }
 
+            //escolher entre dois ou mais app's para executar
             R.id.chooserMi -> {
-                Toast.makeText(this, "chooserMi", Toast.LENGTH_SHORT)
+                val escolherAppIntent = Intent(ACTION_CHOOSER)
+                val informacoesIntent = Intent(ACTION_VIEW, Uri.parse(amb.urlTv.text.toString()))
+
+                escolherAppIntent.putExtra(EXTRA_TITLE, "Escolha seu navegador")
+                escolherAppIntent.putExtra(EXTRA_INTENT, informacoesIntent)
+                startActivity(escolherAppIntent)
                 true
             }
 
