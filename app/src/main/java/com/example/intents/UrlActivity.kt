@@ -21,8 +21,7 @@ class UrlActivity : AppCompatActivity() {
         val urlAnterior = intent.getStringExtra("URL") ?: ""
 
         if (urlAnterior.isNotEmpty()){
-            aub.urlEt.setText(urlAnterior
-            )
+            aub.urlEt.setText(urlAnterior)
         }
 
         Toast.makeText(this, "Estudo Intents",Toast.LENGTH_SHORT).show()

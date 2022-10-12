@@ -11,7 +11,7 @@
         android:id="@+id/urlEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="https://www.google.com"
+        android:hint="99768-0070"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
